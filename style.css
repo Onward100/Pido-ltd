@@ -16,6 +16,9 @@ header {
   align-items: center;
   padding: 20px;
 }
+.desktop-nav-bar {
+  display: none;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -52,6 +55,7 @@ header {
   top: 80px;
   transition: all 0.3s ease-in-out;
   transform: translateY(-2000px);
+  z-index: 6;
 }
 .nav-bar ul {
   margin: 30px;
@@ -218,6 +222,7 @@ h2,
 h3 {
   margin-bottom: 20px;
 }
+
 .contact-content a {
   display: block;
   color: white;
@@ -235,9 +240,16 @@ h3 {
   color: white;
   box-shadow: inset 2px 1px 2px 25px blue;
 }
+.get-in-touch {
+  display: block;
+}
+img {
+  width: 100%;
+}
 .contact-form {
   margin: auto;
   width: 80%;
+  padding: 0;
 }
 .contact-form h3 {
   text-align: center;
@@ -277,6 +289,7 @@ h3 {
 }
 .footer-content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background: green;
@@ -289,15 +302,23 @@ h3 {
   gap: 30px;
   align-items: center;
 }
-.footer-content li{
-    list-style-type: none;
+.footer-content li {
+  list-style-type: none;
 }
-.footer-content a{
-    text-decoration: none;
+.footer-content a {
+  text-decoration: none;
 }
-.footer-content i{
-    background-color: white;
-    color: green;
+.footer-content i {
+  background-color: white;
+  color: green;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+.footer-content i:hover{
+  color: white;
+  box-shadow: inset 2px 1px 2px 25px blue;
 }
 
 @media screen and (min-width: 840px) {
@@ -333,5 +354,75 @@ h3 {
     align-items: center;
     width: 80%;
     margin: 0 auto 20px;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .fa-times {
+    display: none;
+  }
+  .header {
+    width: 90%;
+    margin: auto;
+  }
+  .desktop-nav-bar {
+    display: block;
+  }
+  .desktop-nav-bar ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .desktop-nav-bar li {
+    list-style-type: none;
+  }
+  .desktop-nav-bar a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .desktop-nav-bar a:hover {
+    color: blue;
+  }
+  .hero {
+    width: 90%;
+    margin: auto;
+  }
+  .hero h1 {
+    margin-top: 100px;
+    font-size: 70px;
+    width: 70%;
+  }
+  .hero p {
+    width: 50%;
+  }
+  .hero a {
+    width: 20%;
+  }
+  .contact-text {
+    width: 80%;
+    margin: auto;
+  }
+  .get-in-touch {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .getintouch-text {
+    width: 50%;
+  }
+  img {
+    width: 50%;
+  }
+  .img img {
+    width: 100%;
+    object-fit: contain;
   }
 }
