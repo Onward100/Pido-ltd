@@ -21,3 +21,21 @@ navLinks.forEach((link) => {
 //     navMenu.style.transform = "translateY(-2000px)";
 //   }
 // });
+
+// const name = document.querySelector(".name")
+// const phone = document.querySelector(".number")
+// const message = document.querySelector(".message")
+// const submit = document.querySelector(".send")
+// const errMessage = document.querySelectorAll(".errMessage")
+
+// submit.addEventListener("click", () =>{
+//   if(phone.value === ""){
+//     setTimeout(() =>{
+//       errMessage.forEach(err => {
+//         err.innerHTML = "fields can't be empty"
+//         err.style.color = "red"
+//     })
+      
+//     }, 300);
+//   }
+// })

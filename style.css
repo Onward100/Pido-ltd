@@ -270,7 +270,8 @@ img {
   border-radius: 5px;
   border: 1px solid green;
 }
-.contact-form a {
+.contact-form button {
+  outline: none;
   display: block;
   color: white;
   text-decoration: none;
@@ -280,10 +281,11 @@ img {
   width: 37%;
   text-align: center;
   border-radius: 5px;
+  border: none;
   margin: 20px auto 80px;
   transition: all 0.3s ease;
 }
-.contact-form a:hover {
+.contact-form button:hover {
   color: white;
   box-shadow: inset 2px 1px 2px 25px blue;
 }
